@@ -1,22 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
-
+/* CSS Variables */
 :root {
   --normal-font: 400;
   --bold-font: 600;
   --bolder-font: 900;
-  --primary-color: #0652dd;
-  --secondary-color: #ea2027;
   --line-height: 1.7rem;
   --transition: 0.4s ease-in;
 }
 
-
+/* Smooth scroll effect */
 html {
   scroll-behavior: smooth;
 }
 
-
+/* Resets */
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +32,7 @@ ul li {
 
 a {
   text-decoration: none;
-  color: #cacaca;
+  color: #808080;
 }
 
 a:hover {
@@ -59,7 +57,9 @@ a:hover {
     box-shadow: 2px 3px 2px #f1f1f1;
   }
 
-
+  .menu {
+    display: none;
+  }
 
   .logo {
     font-size: 2rem;
@@ -78,4 +78,25 @@ a:hover {
   
   .nav-link {
     font-weight: var(--bold-font);
+  }
+
+
+
+  .about h3 {
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    font-size: 30px;
+  }
+
+  .about p {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 15px;
   }
